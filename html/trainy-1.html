@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tags {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        outline: 1px solid tomato;
+      }
+      .tags__item {
+        padding: 10px;
+        margin: 5px;
+        outline: 1px solid green;
+      }
+      .tags__btn {
+        border: none;
+        border-radius: 20px;
+        background-color: violet;
+        color: black;
+      }
+      .tags__btn--active {
+        background-color: rgb(237, 212, 100);
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p href="google.com">На главную</p> -->
+    <ul class="tags">
+      <li class="tags__item">
+        <button class="tags__btn" data-value="html">#html></button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="css">#css</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="js">#js</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="react">#react</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="python">#python</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="java">#java</button>
+      </li>
+      <li class="tags__item">
+        <button class="tags__btn" data-value="node-js">#node</button>
+      </li>
+    </ul>
+    <script src="js/trainy-1.js" type="module"></script>
+  </body>
+</html>
