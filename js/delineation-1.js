@@ -25,18 +25,3 @@ const tagsList = document.querySelector(".tags");
 // добавляем в контейнер выбранные теги, без их дублирования
 const tagsContainer = new Set();
 tagsList.addEventListener("click", addInTagsContainer);
-function addInTagsContainer(e) {
-  if (e.target.nodeName !== "BUTTON") {
-    return;
-  }
-  const btn = e.target;
-  const tag = btn.dataset.value;
-  const isActive = btn.classList.contains("tags__btn--active");
-  if (isActive) {
-    tagsContainer.delete(tag);
-  } else {
-    tagsContainer.add(tag);
-  }
-  btn.classList.toggle("tags__btn--active");
-  console.log(tagsContainer);
-}
