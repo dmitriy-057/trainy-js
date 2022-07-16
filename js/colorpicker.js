@@ -66,6 +66,12 @@ function onPalletteContainerClick(e) {
   setBodyBgColor(swatchEl.dataset.hex);
 }
 
+// функция для добавления класса актив на текущую карточку
+function addCurrentActiveCard(card) {
+  // parentColorCard.classList.add("is-active");
+  card.classList.add("is-active");
+}
+
 // функция для  снятия с карточки класса актив
 function removeActiveCardClass() {
   // получаем доступ к классу актив
@@ -74,12 +80,6 @@ function removeActiveCardClass() {
   if (currentActiveCard) {
     currentActiveCard.classList.remove("is-active");
   }
-}
-
-// функция для добавления класса актив на текущую карточку
-function addCurrentActiveCard(card) {
-  // parentColorCard.classList.add("is-active");
-  card.classList.add("is-active");
 }
 
 // функция для привязки цвета боди к цвету активной карточки
